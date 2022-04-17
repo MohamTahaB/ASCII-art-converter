@@ -13,5 +13,5 @@ im_rgb = im.convert("RGB")
 for i in range(maxy):
     for j in range(maxx):
         aux = im_rgb.getpixel((j, i))
-        print(liste[(aux[0] + aux[1] + aux[2])%11] , end='')
+        print(liste[(aux[0] + aux[1] + aux[2])//11] , end='')
     print("")
